@@ -16,5 +16,26 @@ namespace PruebaGit
         {
             InitializeComponent();
         }
+
+        private void btSumar_Click(object sender, EventArgs e)
+        {
+            //try
+            //{
+                int A = System.Convert.ToInt32(txtA.Text);
+                int B = System.Convert.ToInt32(txtB.Text);
+
+                int Res = A + B;
+
+                lblResultado.Text = System.Convert.ToString(Res); //  Res.ToString();
+            //}
+            //catch (FormatException er)
+            //{
+            //    lblResultado.Text = "Dato incorrecto, algún sumando no es un número entero";
+            //}
+            //catch (Exception er)
+            //{
+            //    lblResultado.Text = er.Message;
+            //}
+        }
     }
 }
